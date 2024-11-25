@@ -845,13 +845,13 @@ footer {
 @media screen and (max-width: 765px) {
     nav {
         justify-content: space-around;
-        height: 100%;
+        max-height: 100%;
     }
     .logo {
         width: 7rem;
     }
     .nav-links {
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 92vh;
         top: 8vh;
