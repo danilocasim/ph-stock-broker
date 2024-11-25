@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Philippine Stock Market</title>
+    <link rel="stylesheet" href="./commonStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./img/logo-white.png" alt="" />
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                    <img src="./img/logo-white.png" alt="" />
+                </a>
+            </ul>
+
+            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link"><a href="./aboutus.html">About Us</a></li>
+            <li class="nav-link"><a href="./contact.html">Contact</a></li>
+            <li class="nav-link"><a href="./trade/trade.html">Buy Stocks</a></li>
+
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="" />
+                <img class="sociallink" src="./img/twitter-icon-white.svg" alt="" />
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="" />
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="" />
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero page -->
+    <section class="hero gridSection">
+        <div class="sectionDesc">
+            <h1 class="headline">
+                Your trusted gateway to the
+                <span class="cryptoText">PH STOCK MARKET</span>.
+            </h1>
+            <p class="sub-headline">
+                Explore the top companies in the Philippine stock market. Track your investments, and never miss a profitable trade!
+            </p>
+            <div class="btnContainer">
+                <a href=""><button class="btn btn1">Trade Stocks Now</button></a>
+            </div>
+        </div>
+        <div class="sectionPic bouncepic" id="sectionPic">
+            <img src="./img/hero-image.png" alt="" />
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section>
+        <div class="carouselContainer">
+            <div class="eachCarousel eachCarouselBorder">
+                <img src="./img/bitcoin-icon.png" alt="" />
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">SM Investments</h1>
+                    <p class="carouselPara">A leading Philippine conglomerate</p>
+                    <div class="carouselPrice">
+                        <h3>₱950</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">+2%</h3>
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+
+            <div class="eachCarousel">
+                <img src="./img/ethereum-icon.png" alt="" />
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Ayala Corporation</h1>
+                    <p class="carouselPara">
+                        One of the oldest and largest conglomerates in the Philippines
+                    </p>
+                    <div class="carouselPrice">
+                        <h3>₱800</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">+1.5%</h3>
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+
+            <div class="eachCarousel">
+                <img src="./img/tether-icon.png" alt="" />
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">BDO Unibank</h1>
+                    <p class="carouselPara">The largest bank in the Philippines</p>
+                    <div class="carouselPrice">
+                        <h3>₱140</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">+3%</h3>
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+
+            <div class="eachCarousel">
+                <img src="./img/bitcoin-icon.png" alt="" />
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">PLDT</h1>
+                    <p class="carouselPara">Leading telecommunications provider</p>
+                    <div class="carouselPrice">
+                        <h3>₱1,200</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">+1%</h3>
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+
+            <div class="eachCarousel">
+                <img src="./img/ethereum-icon.png" alt="" />
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Globe Telecom</h1>
+                    <p class="carouselPara">Key player in telecom services</p>
+                    <div class="carouselPrice">
+                        <h3>₱2,000</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">+2.5%</h3>
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+
+            <div class="eachCarousel">
+                <img src="./img/tether-icon.png" alt="" />
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Jollibee Foods</h1>
+                    <p class="carouselPara">Popular fast-food giant</p>
+                    <div class="carouselPrice">
+                        <h3>₱270</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">+3.2%</h3>
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+        </div>
+        <div class="carouselIndicator">
+            <div class="indicator activeIndicator" onclick="slideCarousel(0)"></div>
+            <div class="indicator" onclick="slideCarousel(1)"></div>
+            <div class="indicator" onclick="slideCarousel(2)"></div>
+            <div class="indicator" onclick="slideCarousel(3)"></div>
+            <div class="indicator" onclick="slideCarousel(4)"></div>
+            <div class="indicator" onclick="slideCarousel(5)"></div>
+        </div>
+    </section>
+    <!-- Processes -->
+    <section class="gridSection">
+        <div class="sectionDesc processessDesc">
+            <h1 class="sectionHeader">Philippine Stock Market Process</h1>
+            <p class="sectionPara">
+                We provide seamless services for trading stocks in the Philippine market.
+            </p>
+            <div class="eachProcesses">
+                <img src="./img/handshake-icon-white-line.svg" alt="handshake" />
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Trading</h1>
+                    <p>
+                        Buy and sell Philippine stocks with real-time updates and secure processing.
+                    </p>
+                </div>
+            </div>
+            <div class="eachProcesses">
+                <img src="./img/cart-icon-white-line.svg" alt="handshake" />
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Investing</h1>
+                    <p>
+                        Access insights to make informed decisions on your Philippine stock investments.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic bouncepic processesPic" id="sectionPic">
+            <img src="./img/chain-process-img.png" alt="" />
+        </div>
+    </section>
+
+    <!-- Markets -->
+    <section class="gridSection">
+        <div class="sectionDesc marketDesc">
+            <h1 class="sectionHeader">Markets at Your Fingertips</h1>
+            <p class="sectionPara">
+                Access the Philippine Stock Market with ease and confidence through our platform.
+            </p>
+            <div class="eachMarket">
+                <img src="./img/buy-icon-color.svg" alt="handshake" />
+                <div>
+                    <h1 class="marketTitle">Buying</h1>
+                    <p class="darkPara">
+                        Invest in top-performing Philippine stocks and diversify your portfolio.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/trading-icon-color.svg" alt="handshake" />
+                <div>
+                    <h1 class="marketTitle">Trading</h1>
+                    <p class="darkPara">
+                        Stay updated with real-time stock price movements and execute timely trades.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/support-icon-color.svg" alt="handshake" />
+                <div>
+                    <h1 class="marketTitle">Supporting</h1>
+                    <p class="darkPara">
+                        Get expert guidance and support for navigating the Philippine stock market.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/online-icon-color.svg" alt="handshake" />
+                <div>
+                    <h1 class="marketTitle">Online</h1>
+                    <p class="darkPara">
+                        Manage your investments and trade Philippine stocks conveniently online.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic marketspicSection" id="sectionPic">
+            <h1 class="marketspicHeader">PHILIPPINE STOCKS</h1>
+            <div class="marketsPicContainer">
+                <div class="marketPic marketPic1">
+                    <img src="./img/persent-icon-white.svg" alt="" />
+                    <article class="marketTitle">Top Gainers</article>
+                </div>
+
+                <div class="marketPic marketPic2">
+                    <img src="./img/bitcoin-icon-white.svg" alt="" />
+                    <article class="marketTitle">Blue Chips</article>
+                </div>
+
+                <div class="marketPic marketPic3">
+                    <img src="./img/ethereum-white-icon.svg" alt="" />
+                    <article class="marketTitle">Emerging Stocks</article>
+                </div>
+
+                <div class="marketPic marketPic4">
+                    <img src="./img/handshake-icon-white.svg" alt="" />
+                    <article class="marketTitle">Partnerships</article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="gridSection">
+        <div class="sectionDesc dashboardDesc">
+            <h1 class="sectionHeader">Trade Philippine Stocks in Seconds</h1>
+            <p class="sectionPara">
+                With our platform, you can access real-time trading and analytics from your device.
+            </p>
+            <a href="https://svr2.colfinancial.com/ape/colcharts/col_charting.asp" target="_blank" rel="noopener"><button class="btn">Explore Now</button></a
+        >
+      </div>
+
+      <div class="sectionPic dashboardPic">
+        <img src="./img/dashboard-dark.jpg" alt="" />
+      </div>
+    </section>
+
+    <div class="fundSection">
+      <div class="sectionDesc">
+        <h1 class="sectionHeader">Manage Your Investments</h1>
+        <p class="sectionPara">
+          Our platform provides competitive tools to help you grow your
+          portfolio in the Philippine market.
+        </p>
+        <div class="fundsContainer">
+          <div class="fund">
+            <img
+              src="./img/cryptocurrency-white-icon.svg"
+              alt="cryptocurrency"
+            />
+            <h1 class="fundType">All Stock Access</h1>
+            <p class="darkPara">
+              Buy and trade stocks from different industries seamlessly.
+            </p>
+          </div>
+
+          <div class="fund">
+            <img src="./img/blockchain-white-icon.svg" alt="cryptocurrency" />
+            <h1 class="fundType">Market Insights</h1>
+            <p class="darkPara">
+              Stay informed with in-depth analysis of the Philippine Stock
+              Market.
+            </p>
+          </div>
+
+          <div class="fund">
+            <img
+              src="./img/cryptocurrency-sell-white-icon.svg"
+              alt="cryptocurrency"
+            />
+            <h1 class="fundType">Stock Selling</h1>
+            <p class="darkPara">
+              Learn to maximize profits through strategic stock sales.
+            </p>
+          </div>
+
+          <div class="fund">
+            <img
+              src="./img/cryptocurrency-card-white-icon.svg"
+              alt="cryptocurrency"
+            />
+            <h1 class="fundType">Investor Tools</h1>
+            <p class="darkPara">
+              Utilize advanced tools to track and manage your stock investments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="gridSection">
+      <div class="sectionDesc newsletterDesc">
+        <h1 class="sectionHeader">Subscribe for Stock Updates!</h1>
+        <p class="sectionPara">
+          Stay up-to-date with the latest news and insights on the Philippine
+          Stock Market.
+        </p>
+        <form action="#" class="newsletter">
+          <input
+            type="email"
+            name=""
+            id="newsletter"
+            placeholder="enter your email"
+          />
+          <button type="submit" class="btn primaryBtn">Subscribe</button>
+        </form>
+      </div>
+      <div class="sectionPic bouncepic newsletterPic">
+        <img src="./img/newsletter.png" alt="" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="joinSection">
+        <div class="joinDesc">
+          <h1 class="sectionHeader">Join the Philippine Stock Market</h1>
+          <p class="sectionPara">
+            Create your account today and start investing in Philippine stocks.
+          </p>
+        </div>
+        <button class="btn primaryBtn">JOIN NOW</button>
+      </div>
+
+      <div class="footerlinksContainer">
+        <div class="footerAboutus">
+          <img src="./img/logo-white.png" alt="" />
+          <p class="darkPara">
+            With a user-friendly interface and expert guidance, our platform is
+            your gateway to the Philippine Stock Market.
+          </p>
+          <div class="footersociallinkContainer">
+            <img class="sociallink" src="./img/fabook-icon-white.svg" alt="" />
+            <img class="sociallink" src="./img/twitter-icon-white.svg" alt="" />
+            <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="" />
+            <img
+              class="sociallink"
+              src="./img/whatsapp-icon-white.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="footerlink">
+          <h1 class="linkTitle">Explore</h1>
+          <a href="#" class="eachLink">About us</a>
+            <a href="#" class="eachLink">FAQ</a>
+            <a href="#" class="eachLink">Blog</a>
+            <a href="#" class="eachLink">Contact</a>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Service</h1>
+            <a href="#" class="eachLink">Trading</a>
+            <a href="#" class="eachLink">Market Analysis</a>
+            <a href="#" class="eachLink">Investor Tools</a>
+            <a href="#" class="eachLink">Support</a>
+        </div>
+
+        <div class="footerlink">
+            <h1 class="linkTitle">Resource</h1>
+            <a href="#" class="eachLink">Style Guide</a>
+            <a href="#" class="eachLink">Change Log</a>
+            <a href="#" class="eachLink">License</a>
+        </div>
+        </div>
+
+        <div class="footerCopyright">
+            <p>
+                &copy; 2023 design and developed by
+                <a href="#" class="developedBy">Programming Insider</a>.
+            </p>
+        </div>
+        </footer>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
