@@ -6,6 +6,7 @@
     <title>Philippine Stock Market</title>
     <link rel="stylesheet" href="./commonStyle.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="trade.css" />
     <script
       src="https://kit.fontawesome.com/aa7454d09f.js"
       crossorigin="anonymous"
@@ -13,57 +14,110 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <header>
-      <div id="logo">
-        <a href="./index.html">
-          <img src="/img/logo-white.png" alt="" />
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img class="logo" src="img/logo-white.png" alt="logo" />
         </a>
       </div>
-      <ul class="nav" id="nav">
-        <ul class="navLogo">
-          <a href="./index.html">
-            <img src="/img/logo-white.png" alt="" />
-          </a>
-        </ul>
-
-        <li class="nav-link"><a href="/index.html">Home</a></li>
-        <li class="nav-link"><a href="/aboutus.html">About Us</a></li>
-        <li class="nav-link"><a href="/contact.html">Contact</a></li>
-        <li class="nav-link"><a href="/trade.html">Buy Stocks</a></li>
-
-        <li class="sociallinkContainer">
-          <img class="sociallink" src="/img/fabook-icon-white.svg" alt="" />
-          <img class="sociallink" src="/img/twitter-icon-white.svg" alt="" />
-          <img class="sociallink" src="/img/inkedin-icon-white.svg" alt="" />
-          <img class="sociallink" src="/img/whatsapp-icon-white.svg" alt="" />
-        </li>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="trade.html">Buy Stocks</a></li>
       </ul>
-      <div id="barContainer">
-        <i id="bar" class="fa-solid fa-bars"></i>
+      <div class="burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
       </div>
-    </header>
+    </nav>
 
     <!-- Hero page -->
-    <section class="hero gridSection">
-      <div class="sectionDesc">
-        <h1 class="headline">
-          Your trusted gateway to the
-          <span class="cryptoText">PH STOCK MARKET</span>.
-        </h1>
-        <p class="sub-headline">
-          Explore the top companies in the Philippine stock market. Track your
-          investments, and never miss a profitable trade!
-        </p>
-        <div class="btnContainer">
-          <a href=""><button class="btn btn1">Trade Stocks Now</button></a>
+    <section class="hero gridSection stockWrapper">
+      <div class="balance-wrapper">
+        <h1>Stock Trading System (PH Stocks)</h1>
+        <div class="balance">
+          <h3>Available Balance: ₱<span id="availableBalance">10000</span></h3>
         </div>
       </div>
-      <div class="sectionPic bouncepic" id="sectionPic">
-        <img src="./img/hero-image.png" alt="" />
+
+      <div class="container">
+        <div id="stock-ALI" class="stock">
+          <h3>Ayala Land (ALI)</h3>
+          <p>Price: ₱30</p>
+          <button onclick="buyStock('ALI')">Buy</button>
+          <button onclick="sellStock('ALI')">Sell</button>
+          <p>Owned: <span id="owned-ALI">0</span></p>
+        </div>
+        <div id="stock-AC" class="stock">
+          <h3>Ayala Corporation (AC)</h3>
+          <p>Price: ₱800</p>
+          <button onclick="buyStock('AC')">Buy</button>
+          <button onclick="sellStock('AC')">Sell</button>
+          <p>Owned: <span id="owned-AC">0</span></p>
+        </div>
+        <div id="stock-JFC" class="stock">
+          <h3>Jollibee Foods (JFC)</h3>
+          <p>Price: ₱200</p>
+          <button onclick="buyStock('JFC')">Buy</button>
+          <button onclick="sellStock('JFC')">Sell</button>
+          <p>Owned: <span id="owned-JFC">0</span></p>
+        </div>
+        <div id="stock-SM" class="stock">
+          <h3>SM Investments (SM)</h3>
+          <p>Price: ₱1000</p>
+          <button onclick="buyStock('SM')">Buy</button>
+          <button onclick="sellStock('SM')">Sell</button>
+          <p>Owned: <span id="owned-SM">0</span></p>
+        </div>
+        <div id="stock-TEL" class="stock">
+          <h3>PLDT Inc. (TEL)</h3>
+          <p>Price: ₱1300</p>
+          <button onclick="buyStock('TEL')">Buy</button>
+          <button onclick="sellStock('TEL')">Sell</button>
+          <p>Owned: <span id="owned-TEL">0</span></p>
+        </div>
+        <div id="stock-SMPH" class="stock">
+          <h3>SM Prime (SMPH)</h3>
+          <p>Price: ₱36</p>
+          <button onclick="buyStock('SMPH')">Buy</button>
+          <button onclick="sellStock('SMPH')">Sell</button>
+          <p>Owned: <span id="owned-SMPH">0</span></p>
+        </div>
+        <div id="stock-MBT" class="stock">
+          <h3>Metrobank (MBT)</h3>
+          <p>Price: ₱50</p>
+          <button onclick="buyStock('MBT')">Buy</button>
+          <button onclick="sellStock('MBT')">Sell</button>
+          <p>Owned: <span id="owned-MBT">0</span></p>
+        </div>
+        <div id="stock-BDO" class="stock">
+          <h3>BDO Unibank (BDO)</h3>
+          <p>Price: ₱130</p>
+          <button onclick="buyStock('BDO')">Buy</button>
+          <button onclick="sellStock('BDO')">Sell</button>
+          <p>Owned: <span id="owned-BDO">0</span></p>
+        </div>
+        <div id="stock-GLO" class="stock">
+          <h3>Globe Telecom (GLO)</h3>
+          <p>Price: ₱2200</p>
+          <button onclick="buyStock('GLO')">Buy</button>
+          <button onclick="sellStock('GLO')">Sell</button>
+          <p>Owned: <span id="owned-GLO">0</span></p>
+        </div>
+        <div id="stock-MEG" class="stock">
+          <h3>Megaworld Corporation (MEG)</h3>
+          <p>Price: ₱3.5</p>
+          <button onclick="buyStock('MEG')">Buy</button>
+          <button onclick="sellStock('MEG')">Sell</button>
+          <p>Owned: <span id="owned-MEG">0</span></p>
+        </div>
       </div>
     </section>
-
-    <script src="./script.js"></script>
+    <div class="footer">
+      <p>&copy; 2024 Stock Trading System. All rights reserved.</p>
+    </div>
+    <script src="trade.js"></script>
   </body>
 </html>
