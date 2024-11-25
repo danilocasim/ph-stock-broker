@@ -1,29 +1,31 @@
 // header
 
 const navSlide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navigationBar = document.querySelector("nav");
+    const navLinks = document.querySelectorAll(".nav-links li");
 
-  burger.addEventListener("click", () => {
-    // toggle nav
-    nav.classList.toggle("nav-active");
+    burger.addEventListener("click", () => {
+        // toggle nav
+        nav.classList.toggle("nav-active");
 
-    // animate links
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation =
-          link.style.animation = `navLinkFade 0.5s ease forwards ${
+        // animate links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = "";
+            } else {
+                link.style.animation =
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${
             index / 7 + 0.3
           }s`;
-      }
-    });
+            }
+        });
 
-    // burger animation
-    burger.classList.toggle("toggle");
-  });
+        // burger animation
+        burger.classList.toggle("toggle");
+        navigationBar.classList.toggle("nav-overflow");
+    });
 };
 
 navSlide();
@@ -35,15 +37,15 @@ const allEachCarousel = document.querySelectorAll(".eachCarousel");
 const allIndicator = document.querySelectorAll(".indicator");
 
 const slideCarousel = (index) => {
-  for (let x = 0; x < allEachCarousel.length; x++) {
-    if (x === index) {
-      allEachCarousel[x].classList.add("eachCarouselBorder");
-      allIndicator[x].classList.add("activeIndicator");
-    } else {
-      allEachCarousel[x].classList.remove("eachCarouselBorder");
-      allIndicator[x].classList.remove("activeIndicator");
+    for (let x = 0; x < allEachCarousel.length; x++) {
+        if (x === index) {
+            allEachCarousel[x].classList.add("eachCarouselBorder");
+            allIndicator[x].classList.add("activeIndicator");
+        } else {
+            allEachCarousel[x].classList.remove("eachCarouselBorder");
+            allIndicator[x].classList.remove("activeIndicator");
+        }
     }
-  }
-  carouselContainer.scrollLeft = index * (eachCarousel + 10);
-  console.log(carouselContainer.scrollLeft);
+    carouselContainer.scrollLeft = index * (eachCarousel + 10);
+    console.log(carouselContainer.scrollLeft);
 };
