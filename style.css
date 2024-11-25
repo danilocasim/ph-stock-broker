@@ -845,6 +845,7 @@ footer {
 @media screen and (max-width: 765px) {
     nav {
         justify-content: space-around;
+        height: 100%;
     }
     .logo {
         width: 7rem;
